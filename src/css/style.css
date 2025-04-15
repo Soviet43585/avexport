@@ -1,0 +1,1238 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Montserrat:wght@600&family=Raleway&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #FFF;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 0 16px 0 16px;
+  max-width: 1130px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  background: none;
+}
+.container::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: rgba(20, 20, 20, 0.242);
+}
+
+.button {
+  width: 310px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 90px;
+  border: 1px solid #D9D9D9;
+  background: #478252;
+  color: #FFF;
+  transition: 0.5s;
+}
+.button:hover {
+  border: 1px solid #478252;
+  background: #D9D9D9;
+  color: #131313;
+}
+
+.header {
+  background: #D9D9D9;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header .container {
+  overflow: auto;
+}
+.header__logo-container {
+  display: flex;
+  align-items: center;
+}
+.header__company-name {
+  color: #131313;
+  font-size: 25px;
+}
+.header__logo {
+  display: block;
+}
+.header__container {
+  padding: 0 16px 0 16px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  height: 100%;
+}
+.header__nav-item {
+  color: #131313;
+  background: #D9D9D9;
+  height: 100%;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: 0.5s all;
+}
+.header__nav-item:hover {
+  background: #478252;
+  color: #FFF;
+}
+.header__nav-item_active {
+  background: #478252;
+  color: #FFF;
+}
+.header__contacts {
+  color: #478252;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__contacts a {
+  margin-right: 20px;
+  color: #478252;
+}
+.header__contacts p {
+  color: #131313;
+  font-size: 24px;
+}
+.header__hamburger {
+  height: 25px;
+  width: 25px;
+  display: none;
+  flex-direction: column;
+}
+.header__hamburger div {
+  height: 5px;
+  width: 100%;
+  background: #478252;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+.header__hamburger div:last-child {
+  margin-bottom: 0;
+}
+.header__hamburger_active div {
+  margin-bottom: -5px;
+}
+.header__hamburger_active div:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+.header__hamburger_active div:nth-child(2) {
+  display: none;
+}
+.header__hamburger_active div:nth-child(3) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.dynamic-section {
+  background: #478252;
+  padding: 40px 0 40px 0;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-inner {
+  display: flex;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+}
+
+.arrow-box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.arrow {
+  height: 100%;
+  padding: 0 50px 0 50px;
+  margin: 0 10px 0 10px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D9D9D9;
+  opacity: 0.2;
+  font-size: 50px;
+  transition: 0.1s all;
+}
+.arrow:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.main-container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.main-container__background {
+  background: url("../img/logistika-1 1.png") lightgray 50%/cover no-repeat;
+  height: 100%;
+}
+.main-container__blur {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.main-container__title {
+  font-size: 48px;
+}
+.main-container__title-description {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.main-container__title-2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.main-container__description {
+  display: flex;
+  margin-bottom: 25px;
+}
+.main-container__left-wrapper {
+  margin-right: 50px;
+}
+.main-container__description-item {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.main-container__description-item:last-child {
+  margin-bottom: 0;
+}
+.main-container__description-item img {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.about-container {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.about-container__background {
+  background: url("../img/boxes-on-keyboard.png") lightgray 50%/cover no-repeat;
+  height: 100%;
+}
+.about-container__blur {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.about-container__title {
+  font-size: 48px;
+}
+.about-container__text {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.about-container__title-2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.about-container__title-2_no-margin {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.about-container__advantages-list {
+  margin-bottom: 40px;
+}
+.about-container__advantages-item {
+  font-size: 16px;
+}
+.about-container__advantages-item i {
+  font-size: 26px;
+}
+.about-container__text-2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.about-container .button {
+  margin-bottom: 20px;
+}
+.about-container__card-box {
+  display: flex;
+  justify-content: space-between;
+}
+.about-container__card {
+  text-align: center;
+}
+.about-container__card h3 {
+  font-size: 22px;
+}
+.about-container__card p {
+  font-size: 18px;
+}
+.about-container__card-img {
+  width: 250px;
+  height: 400px;
+}
+.about-container__card-img_anna {
+  background: url("../img/Аня.jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__card-img_nasta {
+  background: url("../img/Лазовская Виктория v2.0.jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__card-img_alina {
+  background: url("../img/Харитонова Алина .jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__video-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.about-container__video {
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 50vh;
+}
+
+.contacts-container {
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.contacts-container__background {
+  background: url("../img/theregisti-J2xvOFw71S0-unsplash 1.png") lightgray 50%/cover no-repeat;
+  height: 100%;
+}
+.contacts-container__blur {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.contacts-container__title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.contacts-container__content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contacts-container__title-2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contacts-container__messagers-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+.contacts-container__messagers-line a {
+  font-size: 50px;
+  color: #D9D9D9;
+  margin-right: 34px;
+}
+.contacts-container__messagers-line a:last-child {
+  margin-right: 0;
+}
+.contacts-container__phone-numbers {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.contacts-container__phone-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contacts-container__phone-item:last-child {
+  margin-bottom: 0;
+}
+.contacts-container__phone-item a {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+}
+.contacts-container__phone-item a i {
+  color: #D9D9D9;
+  font-size: 50px;
+}
+.contacts-container__title-3 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.contacts-container__button-box {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-container__left-wrapper {
+  margin-right: 20px;
+}
+.contacts-container__right-wrapper {
+  height: 100%;
+  flex: 1;
+}
+.contacts-container__button {
+  margin-bottom: 20px;
+}
+.contacts-container__button:last-child {
+  margin-bottom: 0;
+}
+
+.geography-container {
+  width: 100%;
+}
+.geography-container__content-container {
+  height: 100%;
+  width: 100%;
+}
+.geography-container__background {
+  background: url("../img/theregisti-J2xvOFw71S0-unsplash 1.png") lightgray 50%/cover no-repeat;
+  height: 100%;
+}
+.geography-container__blur {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.geography-container__title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.geography-container__region-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.geography-container__region-box:last-child {
+  margin-bottom: 0;
+}
+.geography-container__country-name {
+  text-align: center;
+  font-size: 24px;
+}
+.geography-container__other-region {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 1px solid #D9D9D9;
+  transition: 0.5s;
+}
+.geography-container__other-region_cis {
+  background: url("../img/Emblem_of_CIS.svg") center/230px no-repeat;
+}
+.geography-container__other-region_europe {
+  background: url("../img/Flag_of_Europe.svg") center/300px no-repeat;
+}
+.geography-container__other-region_china {
+  background: url("../img/Flag_of_the_People's_Republic_of_China.svg") left/300px no-repeat;
+}
+.geography-container__other-region:hover {
+  transform: scale(1.1);
+}
+.geography-container .country-list {
+  text-align: center;
+}
+
+.footer {
+  background: #D9D9D9;
+  padding: 20px 0 20px 0;
+}
+.footer .container {
+  overflow: auto;
+}
+.footer__content-container {
+  color: #131313;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left-wrapper {
+  display: flex;
+  margin-right: 20px;
+}
+.footer__icons {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+.footer__icons a i {
+  color: #478252;
+}
+.footer__contacts {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #131313;
+}
+
+.modal {
+  position: fixed;
+  padding-top: 10%;
+  z-index: 1050;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal__dialog {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.modal__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background: #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.modal__input {
+  display: block;
+  margin: 0 auto;
+  background: #D9D9D9;
+  width: 310px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 90px;
+  border: 1px solid #478252;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal__input:focus {
+  border: 1px solid #527dff;
+}
+.modal__title {
+  margin-bottom: 20px;
+  color: #131313;
+  text-align: center;
+  font-size: 30px;
+}
+.modal .button {
+  display: block;
+  margin: 0 auto;
+}
+
+.chat {
+  height: 400px;
+  width: 250px;
+  background: #D9D9D9;
+  position: fixed;
+  z-index: 500;
+  bottom: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chat__messages-list {
+  height: 350px;
+}
+.chat__messages-item {
+  color: black;
+  background: #fff;
+  margin-bottom: 2px;
+}
+.chat__messages-item:last-child {
+  margin-bottom: 0;
+}
+.chat__btn {
+  position: fixed;
+  z-index: 500;
+  bottom: 100px;
+  right: 100px;
+  color: #478252;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background: #D9D9D9;
+  border-radius: 50px;
+  border: none;
+  transition: 0.5s;
+}
+.chat__btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1280px) {
+  .container {
+    flex: 1;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .header__nav-item {
+    font-size: 14px;
+    width: 90px;
+  }
+  .header__contacts a {
+    margin-right: 10px;
+  }
+  .header__contacts p {
+    font-size: 20px;
+  }
+  .main-container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .main-container__title {
+    font-size: 34px;
+  }
+  .main-container__title-description {
+    font-size: 16px;
+  }
+  .main-container__description-item {
+    font-size: 18px;
+  }
+  .about-container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .about-container__title {
+    font-size: 34px;
+  }
+  .about-container__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .about-container__title-2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .about-container__advantages-list {
+    margin-bottom: 10px;
+  }
+  .about-container__advantages-item {
+    font-size: 16px;
+  }
+  .about-container__advantages-item i {
+    font-size: 18px;
+  }
+  .about-container__text-2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contacts-container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .contacts-container__title {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .contacts-container__title-2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contacts-container__messagers-line {
+    margin-bottom: 10px;
+  }
+  .contacts-container__messagers-line a {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+  .contacts-container__messagers-line a:last-child {
+    margin-right: 0;
+  }
+  .contacts-container__phone-number {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contacts-container__phone-number i {
+    font-size: 30px;
+  }
+  .contacts-container__title-3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .footer__right-wrapper {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex: 1;
+    max-width: 636px;
+    margin: 0 auto;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  .header__company-name {
+    display: none;
+  }
+  .header__nav {
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    display: none;
+    flex-direction: column;
+    background: #D9D9D9;
+  }
+  .header__nav-item {
+    top: 0;
+    height: 40px;
+    width: 100%;
+    transition: 0.5s all;
+  }
+  .header__hamburger {
+    display: block;
+  }
+  .arrow-box {
+    display: none;
+  }
+  .button {
+    width: 155px;
+    height: 35px;
+    font-size: 10px;
+  }
+  .modal {
+    padding: 0;
+  }
+  .modal__dialog {
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .modal__content {
+    margin: 0;
+    width: 100%;
+    max-height: 100%;
+  }
+  .modal .button {
+    width: 310px;
+    height: 70px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+  .main-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .main-container__title {
+    font-size: 24px;
+  }
+  .main-container__title-description {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .main-container__title-2 {
+    font-size: 18px;
+  }
+  .main-container__description-item {
+    font-size: 14px;
+  }
+  .main-container__description-item img {
+    width: 25px;
+    height: 25px;
+  }
+  .main-container__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .about-container__card-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-container__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+  }
+  .about-container__card h3 {
+    font-size: 16px;
+  }
+  .about-container__card p {
+    font-size: 14px;
+  }
+  .about-container__card-img {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media (max-width: 530px) {
+  .header__contacts p {
+    display: none;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__input {
+    width: 100%;
+    height: 35px;
+    font-size: 10px;
+  }
+  .modal .button {
+    width: 100%;
+    height: 35px;
+    font-size: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+  .about-container__card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  .about-container__card:last-child {
+    margin-bottom: 0;
+  }
+  .about-container__card h3 {
+    font-size: 16px;
+  }
+  .about-container__card p {
+    font-size: 14px;
+  }
+  .about-container__card-img {
+    width: 150px;
+    height: 200px;
+  }
+  .contacts-container__content-container {
+    display: block;
+  }
+  .contacts-container__left-wrapper {
+    margin-bottom: 20px;
+  }
+  .contacts-container__map {
+    height: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */
