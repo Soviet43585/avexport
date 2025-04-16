@@ -661,6 +661,7 @@ body {
 .about-container__card-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .about-container__card {
   text-align: center;
@@ -682,7 +683,16 @@ body {
   background: url("../img/Лазовская Виктория v2.0.jpg") lightgray 50%/cover no-repeat;
 }
 .about-container__card-img_alina {
-  background: url("../img/Харитонова Алина .jpg") lightgray 50%/cover no-repeat;
+  background: url("../img/Харитонова Алина 2.0.jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__card-img_alina-2 {
+  background: url("../img/Сороковик Алина.jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__card-img_luda {
+  background: url("../img/Филиппова Людмила.jpg") lightgray 50%/cover no-repeat;
+}
+.about-container__card-img_maria {
+  background: url("../img/Баглай Мария.jpg") lightgray 50%/cover no-repeat;
 }
 .about-container__video-box {
   display: flex;
